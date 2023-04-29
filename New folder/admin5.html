@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./LineAwesome/css/line-awesome.min.css" />
+    <link rel="stylesheet" href="./CSS/ADstyle.css" />
+    <title>PromoCodes</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css" />
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
+  </head>
+  <body>
+    <input type="checkbox" id="nav-toggle" />
+    <div class="sidebar">
+      <div class="sidebar-brand">
+        <h2><span class="las la-school"></span><span>Book Worm</span></h2>
+      </div>
+      <div class="sidebar-menu">
+        <ul>
+          <li>
+            <a href="admin1.html"
+              ><span class="las la-igloo"></span><span>Dashboard</span></a
+            >
+          </li>
+          <li>
+            <a href="admin2.html"
+              ><span class="las la-users"></span><span>Customers</span></a
+            >
+          </li>
+          <li>
+            <a href="admin3.html"
+              ><span class="las la-clipboard-list"></span
+              ><span>Products</span></a
+            >
+          </li>
+          <li>
+            <a href="admin4.html"
+              ><span class="las la-shopping-bag"></span><span>Orders</span></a
+            >
+          </li>
+          <li>
+            <a href="admin5.html" class="Active"
+              ><span class="las la-receipt"></span><span>Promo code</span></a
+            >
+          </li>
+          <li>
+            <a href="admin6.html"
+              ><span class="las la-user-circle"></span><span>Accounts</span></a
+            >
+          </li>
+          <!-- <li>
+            <a href=""
+              ><span class="las la-clipboard-list"></span><span>Tasks</span></a
+            >
+          </li> -->
+        </ul>
+      </div>
+    </div>
+    <div class="main-content">
+      <header>
+        <h2>
+          <label for="nav-toggle">
+            <span class="las la-bars"> </span>
+          </label>
+          Dashboard
+        </h2>
+        <div class="search-wrapper">
+          <span class="las la-search"></span>
+          <input type="search" placeholder="Search here" />
+        </div>
+        <div class="user-wrapper">
+          <img src="img/2.jpg" width="40px" height="40px" alt="" />
+          <div>
+            <h4>Ahmed</h4>
+            <small>super admin</small>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="Products">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="heo">All Promo-codes</h3>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#promomodal"
+              >
+              Add promo
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="promomodal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Promo code
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Promo-code</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter promo-code">
+                         
+                        </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table width="100%">
+                  <thead>
+                    <tr>
+                      <td>Promo-code</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>08ZR98TQ</td>
+                    </tr>
+                    <tr>
+                      <td>J59STL2G</td>
+                    </tr>
+                    <tr>
+                      <td>H8T66DE1</td>
+                    </tr>
+                    <tr>
+                      <td>GK58F3GA</td>
+                    </tr>
+                    <tr>
+                      <td>HL9P13AC</t>
+                    </tr>
+                    <tr>
+                      <td>MN55Q9Z33</td>
+                    </tr>
+                    <tr>
+                      <td>LA11W3Q4</td>
+                    </tr>
+                    <tr>
+                      <td>W188SS14</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

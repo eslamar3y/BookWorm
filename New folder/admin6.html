@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./LineAwesome/css/line-awesome.min.css" />
+    <link rel="stylesheet" href="./CSS/ADstyle.css" />
+    <title>Admin</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css" />
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
+  </head>
+  <body>
+    <input type="checkbox" id="nav-toggle" />
+    <div class="sidebar">
+      <div class="sidebar-brand">
+        <h2><span class="las la-school"></span><span>Book Worm</span></h2>
+      </div>
+      <div class="sidebar-menu">
+        <ul>
+          <li>
+            <a href="admin1.html"
+              ><span class="las la-igloo"></span><span>Dashboard</span></a
+            >
+          </li>
+          <li>
+            <a href="admin2.html"
+              ><span class="las la-users"></span><span>Customers</span></a
+            >
+          </li>
+          <li>
+            <a href="admin3.html"
+              ><span class="las la-clipboard-list"></span
+              ><span>Products</span></a
+            >
+          </li>
+          <li>
+            <a href="admin4.html"
+              ><span class="las la-shopping-bag"></span><span>Orders</span></a
+            >
+          </li>
+          <li>
+            <a href="admin5.html"
+              ><span class="las la-receipt"></span><span>Promo code</span></a
+            >
+          </li>
+          <li>
+            <a href="admin6.html" class="Active"
+              ><span class="las la-user-circle"></span><span>Accounts</span></a
+            >
+          </li>
+          <!-- <li>
+            <a href=""
+              ><span class="las la-clipboard-list"></span><span>Tasks</span></a
+            >
+          </li> -->
+        </ul>
+      </div>
+    </div>
+    <div class="main-content">
+      <header>
+        <h2>
+          <label for="nav-toggle">
+            <span class="las la-bars"> </span>
+          </label>
+          Dashboard
+        </h2>
+        <div class="search-wrapper">
+          <span class="las la-search"></span>
+          <input type="search" placeholder="Search here" />
+        </div>
+        <div class="user-wrapper">
+          <img src="img/2.jpg" width="40px" height="40px" alt="" />
+          <div>
+            <h4>Ahmed</h4>
+            <small>super admin</small>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="Products">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="heo">All Admins</h3>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
+                Add Admin
+              </button>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table width="100%">
+                  <thead>
+                    <tr>
+                      <td>Admin</td>
+                      <td>Username</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Eslam mohamed</td>
+                      <td>Emaree</td>
+                    </tr>
+                    <tr>
+                      <td>Eslam mohamed</td>
+                      <td>Emaree</td>
+                    </tr>
+                    <tr>
+                      <td>Eslam mohamed</td>
+                      <td>Emaree</td>
+                    </tr>
+                    <tr>
+                      <td>Eslam mohamed</td>
+                      <td>Emaree</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Adding new admin</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <!-- <div class="modal-body">...</div> -->
+          <form class="modal-body">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputName1">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputName1"
+                placeholder="Enter Name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="Password"
+              /><small id="passwordHelp" class="form-text text-muted"
+                >We'll never share your password with anyone else.</small
+              >
+            </div>
+          </form>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="submit" class="btn btn-primary">confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

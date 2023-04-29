@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="adminM.master.cs" Inherits="back_end_project.adminM" %>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./LineAwesome/css/line-awesome.min.css" />
+    <link rel="stylesheet" href="./CSS/ADstyle.css" />
+      <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
+      <asp:ContentPlaceHolder ID="styles" runat="server"></asp:ContentPlaceHolder>
+  </head>
+  <body onload="activates()">
+    
+    <input type="checkbox" id="nav-toggle" />
+    <div class="sidebar">
+      <div class="sidebar-brand">
+        <h2><span class="las la-school"></span><span>Book Worm</span></h2>
+      </div>
+      <div class="sidebar-menu">
+        <ul>
+          <li>
+            <a href="admin1.aspx" id="admin1"
+              ><span class="las la-igloo"></span><span>Dashboard</span></a
+            >
+          </li>
+          <li>
+            <a href="admin2.aspx" id="admin2"
+              ><span class="las la-users"></span><span>Customers</span></a
+            >
+          </li>
+          <li>
+            <a href="admin3.aspx" id="admin3"
+              ><span class="las la-clipboard-list"></span
+              ><span>Products</span></a
+            >
+          </li>
+          <li>
+            <a href="admin4.aspx" id="admin4"
+              ><span class="las la-shopping-bag"></span><span>Orders</span></a
+            >
+          </li>
+          <li>
+            <a href="admin5.aspx" id="admin5"
+              ><span class="las la-receipt"></span><span>Promo code</span></a
+            >
+          </li>
+          <li>
+            <a href="admin6.aspx" id="admin6"
+              ><span class="las la-user-circle"></span><span>Accounts</span></a
+            >
+          </li>
+          <!-- <li>
+            <a href=""
+              ><span class="las la-clipboard-list"></span><span>Tasks</span></a
+            >
+          </li> -->
+        </ul>
+      </div>
+    </div>
+    <div class="main-content">
+      <header>
+        <h2 class="top_part">
+          <label for="nav-toggle">
+            <span class="las la-bars"> </span>
+          </label>
+          Dashboard
+        </h2>
+        <div class="search-wrapper">
+          <span class="las la-search"></span>
+          <input type="search" placeholder="Search here" />
+        </div>
+        <div class="user-wrapper">
+          <img src="img/2.jpg" width="40px" height="40px" alt="" />
+          <div>
+            <h4 class="top_part_right"><asp:Label ID="adminName" runat="server" Text=""></asp:Label></h4>
+            <small>super admin</small>
+          </div>
+        </div>
+      </header>
+        <asp:ContentPlaceHolder ID="Main_Content" runat="server"></asp:ContentPlaceHolder>
+      </div>
+      <asp:ContentPlaceHolder ID="Javascript_Plugins" runat="server"></asp:ContentPlaceHolder>
+      <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/ADmain.js"></script>
+      <script>
+          function activates() { 
+              const str = window.location.href;
+              var ext = str.split('/').pop();
+              var name = ext.split('.')[0]
+              var element = document.getElementById(name);
+              element.classList.add("Active");
+          }
+      </script>
+</body>
+
+</html>
